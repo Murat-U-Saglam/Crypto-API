@@ -2,12 +2,18 @@
 
 To do:
 
-* Develop a front end for data querying
-  * Use django
-  * Make dynamic tables
-* Use nansen for querying
-  * Create a data handler API handler
-  * Use .env for security
+- Develop a front end for data querying
+  - Use django
+  - Make dynamic tables
+- Use nansen for querying
+  - Create a data handler API handler
+  - Use .env for security
+
+# Run Server
+
+```
+python3 manage.py runserver
+```
 
 # Install virtual env
 
