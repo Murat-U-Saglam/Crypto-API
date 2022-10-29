@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-4oiztp^tis)0xeae3=u+^shv%cub(5379+1dewzt%wb+$8v4c!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["127.0.0.1"]
 
 
 # Application definition
@@ -34,9 +34,10 @@ INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
-    "django.contrib.sessions",
+    "django.contrib.sessions",  # May not be needed
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "web3ToolKit",
 ]
 
 MIDDLEWARE = [
@@ -67,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "web3Api.wsgi.application"
+WSGI_APPLICATION = "web3Api.wsgi.application" # responsible for webserver
 
 
 # Database
@@ -103,7 +104,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "en-gb"
 
 TIME_ZONE = "UTC"
 
