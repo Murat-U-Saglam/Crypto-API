@@ -1,7 +1,5 @@
 from datetime import date
-from lib2to3.pgen2 import token
 from django.db import models
-from django.test import TransactionTestCase
 
 # Represents the data in your database
 # Create your models here.

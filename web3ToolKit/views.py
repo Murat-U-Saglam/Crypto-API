@@ -9,11 +9,30 @@ from .models import wallet
 # Create your views here.
 
 
+def apiCall(request):
+    """TODO CALL API
+
+    Args:
+        request (_type_): _description_
+    """
+    return HttpResponse("API CALL")
+
+
+def saveToDatabase(request):
+    """TODO save to database
+
+    Args:
+        request (_type_): _description_
+    """
+    return HttpResponse("save to database")
+
+
 def index(request):
+    """
     myWallet = wallet.objects.all().values()  # get all the data from the database
     output = ""
     for x in myWallet:
         output += x["address"]
-
+    """
     template = loader.get_template("index.html")
-    return HttpResponse(output)
+    return HttpResponse(template.render({}, request))
